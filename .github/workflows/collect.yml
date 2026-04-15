@@ -1,0 +1,39 @@
+name: Collect Latency Data
+
+on:
+  schedule:
+    - cron: '0 * * * *'  
+  workflow_dispatch:  
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          pip install web3 eth-account
+      
+      - name: Collect data
+        env:
+          PK: ${{ secrets.PRIVATE_KEY }}
+          LATENCY_CONTRACT: ${{ secrets.LATENCY_CONTRACT }}
+        run: |
+          python scripts/collect.py
+      
+      - name: Commit data
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/*.json
+          git diff --staged --quiet || (git commit -m "Update latency data [skip ci]" && git push)

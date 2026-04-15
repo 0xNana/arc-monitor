@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-deep: #050505;
+  --bg-charcoal: #121212;
+  --border-strict: #2a2a2a;
+  --neon-cyan: #00f5ff;
+  --p95-purple: #a855f7;
+  --p50-slate: #64748b;
+  --p99-9-red: #ef4444;
+  --muted-slate: #4a5568;
+  --data-text: #e2e8f0;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--bg-deep)] text-slate-300 font-['JetBrains_Mono'] antialiased;
+  }
+  * {
+    border-radius: 0 !important;
+  }
+}
+
+.observability-grid {
+  background-image: 
+    linear-gradient(to right, #1a1a1a 1px, transparent 1px),
+    linear-gradient(to bottom, #1a1a1a 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.strict-card {
+  @apply bg-[var(--bg-charcoal)] border border-[var(--border-strict)] relative;
+  background: linear-gradient(135deg, #121212 0%, #0a0a0a 100%);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+}

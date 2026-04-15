@@ -24,13 +24,14 @@ except ImportError:
 # ---------------------------------------------------------------------
 ARC_CONFIG = {
     "rpc": os.getenv("RPC_URL", "https://rpc.testnet.arc.network"),
-    "contract": os.getenv("LATENCY_CONTRACT"),
+    "contract": os.getenv("LATENCY_CONTRACT", "),
     "sync_method": os.getenv("TX_SEND_METHOD", "eth_sendRawTransaction"),
     "chain_id": 5042002,
 }
 
 TARGET_FEE_USDC = 0.01
 PRIVATE_KEY = os.getenv("PK") or os.getenv("PRIVATE_KEY")
+LATENCY_CONTRACT = 0xB7CaAbfbeb33e34470A3C9e0C7833AC0296210CF
 
 # ---------------------------------------------------------------------
 # ABI (increment function only)

@@ -24,7 +24,7 @@ except ImportError:
 # ---------------------------------------------------------------------
 ARC_CONFIG = {
     "rpc": os.getenv("RPC_URL", "https://rpc.testnet.arc.network"),
-    "contract": os.getenv("LATENCY_CONTRACT", "),
+    "contract": os.getenv("LATENCY_CONTRACT"),
     "sync_method": os.getenv("TX_SEND_METHOD", "eth_sendRawTransaction"),
     "chain_id": 5042002,
 }

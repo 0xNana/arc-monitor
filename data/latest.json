@@ -1,8 +1,8 @@
 {
-  "p50": 649.3,
-  "p95": 1274.28,
-  "p99": 1274.28,
-  "updated": "2026-04-20T17:59:59.688259",
+  "p50": 758.17,
+  "p95": 1078.23,
+  "p99": 1078.23,
+  "updated": "2026-04-20T19:16:16.962835",
   "chainId": 5042002,
   "contractAddress": "0xB7CaAbfbeb33e34470A3C9e0C7833AC0296210CF",
   "sampleCount": 10,
@@ -10,10 +10,10 @@
   "failedSamples": 0,
   "successRatePct": 100.0,
   "latency": {
-    "p50Ms": 649.3,
-    "p95Ms": 1274.28,
-    "p99Ms": 1274.28,
-    "avgMs": 672.82
+    "p50Ms": 758.17,
+    "p95Ms": 1078.23,
+    "p99Ms": 1078.23,
+    "avgMs": 758.78
   },
   "fee": {
     "targetUsdc": 0.01,
@@ -28,8 +28,8 @@
     "volatilityPct": 0.0
   },
   "finality": {
-    "avgMs": 672.82,
-    "p95Ms": 1274.28,
+    "avgMs": 758.78,
+    "p95Ms": 1078.23,
     "under1sRatePct": 90.0,
     "successRatePct": 100.0,
     "reorgsObserved": 0,

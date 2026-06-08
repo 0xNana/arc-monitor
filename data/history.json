@@ -22054,5 +22054,30 @@
     "sampleCount": 10,
     "successfulSamples": 10,
     "failedSamples": 0
+  },
+  {
+    "timestamp": "2026-06-08T09:34:32.696578",
+    "time": "09:34",
+    "p50": 620.11,
+    "p95": 934.57,
+    "p99": 934.57,
+    "latencyP50Ms": 620.11,
+    "latencyP95Ms": 934.57,
+    "latencyP99Ms": 934.57,
+    "feeAvgUsdc": 0.000423,
+    "feeP50Usdc": 0.000423,
+    "feeP95Usdc": 0.000423,
+    "feeP99Usdc": 0.000423,
+    "feeSpreadUsdc": 0.0,
+    "avgGasPriceGwei": 20.004,
+    "avgGasUsed": 21160.0,
+    "avgBaseFeeGwei": 20.0,
+    "finalityAvgMs": 620.88,
+    "finalityP95Ms": 934.57,
+    "finalityUnder1sRatePct": 100.0,
+    "successRatePct": 100.0,
+    "sampleCount": 10,
+    "successfulSamples": 10,
+    "failedSamples": 0
   }
 ]

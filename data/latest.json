@@ -1,8 +1,8 @@
 {
-  "p50": 833.7,
-  "p95": 1007.42,
-  "p99": 1007.42,
-  "updated": "2026-06-26T05:25:34.683555",
+  "p50": 890.82,
+  "p95": 1826.65,
+  "p99": 1826.65,
+  "updated": "2026-06-26T07:16:37.565561",
   "chainId": 5042002,
   "contractAddress": "0xB7CaAbfbeb33e34470A3C9e0C7833AC0296210CF",
   "sampleCount": 10,
@@ -10,27 +10,27 @@
   "failedSamples": 0,
   "successRatePct": 100.0,
   "latency": {
-    "p50Ms": 833.7,
-    "p95Ms": 1007.42,
-    "p99Ms": 1007.42,
-    "avgMs": 850.52
+    "p50Ms": 890.82,
+    "p95Ms": 1826.65,
+    "p99Ms": 1826.65,
+    "avgMs": 938.39
   },
   "fee": {
     "targetUsdc": 0.01,
-    "avgUsdc": 0.000427,
-    "p50Usdc": 0.000427,
-    "p95Usdc": 0.000427,
-    "p99Usdc": 0.000427,
+    "avgUsdc": 0.000487,
+    "p50Usdc": 0.000487,
+    "p95Usdc": 0.000487,
+    "p99Usdc": 0.000487,
     "spreadUsdc": 0.0,
-    "avgGasPriceGwei": 20.2,
+    "avgGasPriceGwei": 23.0,
     "avgGasUsed": 21160.0,
     "avgBaseFeeGwei": 20.0,
     "volatilityPct": 0.0
   },
   "finality": {
-    "avgMs": 850.52,
-    "p95Ms": 1007.42,
-    "under1sRatePct": 60.0,
+    "avgMs": 938.39,
+    "p95Ms": 1826.65,
+    "under1sRatePct": 70.0,
     "successRatePct": 100.0,
     "reorgsObserved": 0,
     "deterministic": true
